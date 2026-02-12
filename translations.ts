@@ -5,7 +5,13 @@ export const translations = {
       title: "Everalume | Cinematic Legacy Films & Tribute Videos",
       description: "Transform family stories into professional cinematic legacy films. The perfect gift for milestone birthdays and family legacy preservation."
     },
-    nav: { vision: "The Vision", samples: "Examples", process: "Method", occasions: "Occasions", cta: "Reserve Consultation" },
+    nav: { vision: "The Vision", samples: "Examples", process: "Method", pricing: "Pricing", occasions: "Occasions", cta: "Reserve Consultation" },
+    trust: {
+      location: "NEW YORK — HAMBURG",
+      privacy: "PRIVATE & CONFIDENTIAL",
+      process: "GUIDED PROCESS",
+      quality: "ARCHIVE-QUALITY DELIVERY"
+    },
     hero: {
       h1: "A Cinematic Legacy Film, Crafted From Your Life Story.",
       p: "From guided interviews to heritage curation, we preserve your family history with cinematic precision.",
@@ -55,6 +61,41 @@ export const translations = {
         { t: "Heritage Curation", d: "We help select and restore the precious photos that define the narrative." },
         { t: "Cinematic Editing", d: "Our studio crafts the narrative, selecting music that resonates with the era." },
         { t: "The Premiere", d: "Receive your high-definition master film, beautifully packaged for your event." }
+      ]
+    },
+    pricing: {
+      h2: "Investment in Heritage",
+      sub: "A curated range of cinematic options",
+      note: "Exact pricing depends on footage complexity, restoration needs, and turnaround time.",
+      recommended: "Signature Choice",
+      packages: [
+        {
+          name: "Essential Film",
+          pos: "A concise tribute to a significant milestone.",
+          bullets: ["Structured life-story interview", "Restored archival photography", "Signature musical score", "High-definition digital delivery"],
+          length: "3–5 Minutes",
+          photos: "20–40 Photos",
+          revisions: "1 Round of Refinements",
+          price: "Investment begins at $2,500"
+        },
+        {
+          name: "Signature Film",
+          pos: "Our definitive cinematic documentary experience.",
+          bullets: ["Deep-dive legacy interview", "Advanced photo restoration", "Licensed cinematic soundtrack", "Narrative script consultation", "Bespoke digital presentation"],
+          length: "6–10 Minutes",
+          photos: "40–70 Photos",
+          revisions: "2 Rounds of Refinements",
+          price: "Investment begins at $3,900"
+        },
+        {
+          name: "Heirloom Film",
+          pos: "The ultimate family archive for future generations.",
+          bullets: ["Multi-day production schedule", "Full archival research", "Custom orchestral score", "Multi-generational storytelling", "Premium physical archive box"],
+          length: "10–15 Minutes",
+          photos: "70–120 Photos",
+          revisions: "3 Rounds of Refinements",
+          price: "Investment begins at $5,900"
+        }
       ]
     },
     assistant: {
@@ -112,7 +153,13 @@ export const translations = {
       title: "Everalume | Exklusive Erinnerungsfilme & Biografien",
       description: "Verwandeln Sie Familiengeschichten in cineastische Vermächtnisse. Das ultimative Geschenk für besondere Meilensteine."
     },
-    nav: { vision: "Die Vision", samples: "Beispiele", process: "Methode", occasions: "Anlässe", cta: "Beratung anfordern" },
+    nav: { vision: "Die Vision", samples: "Beispiele", process: "Methode", pricing: "Preise", occasions: "Anlässe", cta: "Beratung anfordern" },
+    trust: {
+      location: "NEW YORK — HAMBURG",
+      privacy: "VERTRAULICH & DISKRET",
+      process: "GEFÜHRTER PROZESS",
+      quality: "ARCHIV-QUALITÄT"
+    },
     hero: {
       h1: "Ein cineastisches Vermächtnis, erschaffen aus Ihrer Lebensgeschichte.",
       p: "Von geführten Interviews bis zur historischen Kuration – wir bewahren Ihre Familiengeschichte mit biografischer Präzision.",
@@ -162,6 +209,41 @@ export const translations = {
         { t: "Archiv-Kuration", d: "Wir helfen Ihnen bei der Auswahl und Restaurierung der prägenden Fotografien." },
         { t: "Cineastischer Schnitt", d: "Unser Studio webt die Erzählung und wählt die passende musikalische Untermalung." },
         { t: "Die Übergabe", d: "Sie erhalten Ihr hochauflösendes Master-Video in einer exklusiven digitalen Edition." }
+      ]
+    },
+    pricing: {
+      h2: "Investition in Ihr Erbe",
+      sub: "Eine kuratierte Auswahl cineastischer Optionen",
+      note: "Die exakte Preisgestaltung hängt von der Komplexität des Materials, dem Restaurierungsaufwand und der gewünschten Lieferzeit ab.",
+      recommended: "Unsere Empfehlung",
+      packages: [
+        {
+          name: "Essential Film",
+          pos: "Eine prägnante Würdigung eines bedeutenden Meilensteins.",
+          bullets: ["Strukturiertes Lebensgespräch", "Restaurierung Archivfotografie", "Individuelle musikalische Untermalung", "Digitale Übergabe in HD"],
+          length: "3–5 Minuten",
+          photos: "20–40 Fotos",
+          revisions: "1 Korrekturschleife",
+          price: "Investition ab 2.300 €"
+        },
+        {
+          name: "Signature Film",
+          pos: "Unsere definitive cineastische Dokumentation.",
+          bullets: ["Tiefgehendes Zeitzeugen-Interview", "Erweiterte Fotorestaurierung", "Lizenzierter cineastischer Soundtrack", "Beratung zum Narrativ", "Exklusive digitale Präsentation"],
+          length: "6–10 Minuten",
+          photos: "40–70 Fotos",
+          revisions: "2 Korrekturschleifen",
+          price: "Investition ab 3.600 €"
+        },
+        {
+          name: "Heirloom Film",
+          pos: "Das ultimative Familienarchiv für kommende Generationen.",
+          bullets: ["Mehrtägige Produktionsplanung", "Vollständige Archivrecherche", "Maßgeschneiderte Orchesterpartitur", "Mehrgenerationen-Erzählung", "Premium Archiv-Box"],
+          length: "10–15 Minuten",
+          photos: "70–120 Fotos",
+          revisions: "3 Korrekturschleifen",
+          price: "Investition ab 5.500 €"
+        }
       ]
     },
     assistant: {

@@ -14,14 +14,27 @@ export const generateStoryDraft = async (rawInput: string, lang: 'en' | 'de') =>
        Fokus auf: Chronologie, Meilensteine, Werte und sachliche Würde. 
        Struktur: 3-4 Sätze würdevolle Einleitung, 3 chronologische Kapitel, und eine präzise biografische Frage.`;
 
-  const response = await ai.models.generateContent({
-    model: 'gemini-3-flash-preview',
-    contents: `${systemInstruction} Input: "${rawInput}". Respond in ${isEn ? 'US English' : 'German'}. No AI mentions.`,
-    config: {
-      temperature: 0.75,
-      topP: 0.95,
-    }
-  });
+  try {
+    const response = await ai.models.generateContent({
+      model: 'gemini-3-flash-preview',
+      contents: `${systemInstruction} Input: "${rawInput}". Respond in ${isEn ? 'US English' : 'German'}. No AI mentions.`,
+      config: {
+        temperature: 0.75,
+        topP: 0.95,
+      }
+    });
 
-  return response.text;
+    if (!response || !response.text) {
+      throw new Error("Empty response received from Gemini API");
+    }
+
+    return response.text;
+  } catch (error) {
+    console.error("Detailed error in generateStoryDraft:", error);
+    if (error instanceof Error) {
+      console.error("Message:", error.message);
+      console.error("Stack:", error.stack);
+    }
+    throw error; // Re-throw so the UI can handle or report it
+  }
 };
