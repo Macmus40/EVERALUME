@@ -14,13 +14,14 @@ export const Button: React.FC<ButtonProps> = ({
   loading,
   ...props 
 }) => {
-  const baseStyles = "px-10 py-5 font-medium transition-all duration-200 active:translate-y-[1px] text-center inline-flex items-center justify-center gap-2 uppercase tracking-[0.2em] text-[10px] motion-reduce:transition-none motion-reduce:active:translate-y-0";
+  const baseStyles = "px-10 py-5 font-medium transition-all duration-300 active:translate-y-[1px] text-center inline-flex items-center justify-center gap-2 uppercase tracking-[0.2em] text-[10px] motion-reduce:transition-none motion-reduce:active:translate-y-0";
   
   const variants = {
     primary: "bg-[#7D6B5D] text-white hover:bg-[#8d7c6f] border border-[#7D6B5D] hover:border-[#8d7c6f]",
     secondary: "bg-[#EAE4DD] text-[#7D6B5D] hover:bg-[#f2eee9] border border-[#EAE4DD]",
-    outline: "border border-current text-current hover:bg-current hover:text-white",
-    minimal: "border border-white/40 text-white hover:border-white transition-colors bg-transparent"
+    // Enhanced: Outline uses slate-400 border and slate-700 text for better readability on light backgrounds
+    outline: "border border-slate-400 text-slate-700 hover:bg-[#7D6B5D] hover:border-[#7D6B5D] hover:text-white bg-transparent",
+    minimal: "border border-white/60 text-white hover:border-white transition-colors bg-transparent"
   };
 
   return (
